@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
-const SearchForm = () => {
-    const [search, setSearch] = useState("");
-    const [query, setQuery] = useState("chicken");
+const SearchForm = ({ setSearch }) => {
+    const [query, setQuery] = useState("");
 
     const updateSearch = (e) => {
-        setSearch(e.target.value);
+        setQuery(e.target.value);
     };
 
     const getSearch = (e) => {
         e.preventDefault();
-        setQuery(search);
+        setSearch(query.toLowerCase());
     };
 
     return (
@@ -19,7 +18,7 @@ const SearchForm = () => {
                 <input
                     className="search-bar"
                     type="text"
-                    value={search}
+                    value={query}
                     onChange={updateSearch}
                 />
                 <button className="search-button" type="submit">

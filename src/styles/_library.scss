@@ -11,7 +11,28 @@
     transition: all 0.5s ease;
     opacity: 0;
     h2 {
-        padding: 2rem;
+        padding: 2rem 0 0 2rem;
+    }
+}
+
+.libraryHeader {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 2px 0px 5px rgb(204, 204, 204);
+}
+
+.favorites {
+    padding-bottom: 1rem;
+    h3 {
+        padding: 1rem 0 0 2rem;
+    }
+}
+
+.collection {
+    padding-bottom: 1rem;
+    h3 {
+        padding: 1rem 0 0 2rem;
     }
 }
 

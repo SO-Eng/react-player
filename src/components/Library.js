@@ -1,5 +1,4 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import React from "react";
+import React, { useState } from "react";
 import SearchForm from "./SearchForm";
 import LibrarySong from "./LibrarySong";
 
@@ -12,24 +11,36 @@ const Library = ({
     libraryStatus,
     setSongChanged,
 }) => {
+    const [search, setSearch] = useState("");
+
     return (
         <div className={`library ${libraryStatus && "activeLibrary"}`}>
-            <h2>Library</h2>
-            <SearchForm />
+            <div className="libraryHeader">
+                <h2>Library</h2>
+                <SearchForm setSearch={setSearch} />
+            </div>
+            <div className="favorites">
+                <h3>Favorites</h3>
+            </div>
+            <div className="collection">
+                <h3>Collection</h3>
+            </div>
             <div className="librarySongs">
-                {songs.map((song) => (
-                    <LibrarySong
-                        setCurrentSong={setCurrentSong}
-                        song={song}
-                        audioRef={audioRef}
-                        isPlaying={isPlaying}
-                        songs={songs}
-                        setSongs={setSongs}
-                        key={song.id}
-                        id={song.id}
-                        setSongChanged={setSongChanged}
-                    />
-                ))}
+                {songs.map((song) =>
+                    song.name?.toLowerCase().includes(search) ? (
+                        <LibrarySong
+                            setCurrentSong={setCurrentSong}
+                            song={song}
+                            audioRef={audioRef}
+                            isPlaying={isPlaying}
+                            songs={songs}
+                            setSongs={setSongs}
+                            key={song.id}
+                            id={song.id}
+                            setSongChanged={setSongChanged}
+                        />
+                    ) : null
+                )}
             </div>
         </div>
     );

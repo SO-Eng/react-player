@@ -107,7 +107,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "192",
-            audio: "http://46.163.75.84:8000",
+            audio: "http://46.163.75.84:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -524,7 +524,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://media.ballermann-radio.com:8000",
+            audio: "http://media.ballermann-radio.com:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -550,7 +550,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://s7.relay-basslover.de:9000",
+            audio: "http://s7.relay-basslover.de:9000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -654,7 +654,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://icebwso2.srv.co.at:8000/bwchg_hi",
+            audio: "http://icebwso2.srv.co.at:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -839,7 +839,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "96",
-            audio: "http://countrymusic24.powerstream.de:9000",
+            audio: "http://countrymusic24.powerstream.de:9000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1387,7 +1387,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "160",
-            audio: "http://stream2.jenny.fm:9000",
+            audio: "http://stream2.jenny.fm:9000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1809,7 +1809,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://radio1.nightline-radio.de:8000",
+            audio: "http://radio1.nightline-radio.de:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1861,7 +1861,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "192",
-            audio: "http://server1.digital-webstream.de:8000",
+            audio: "http://server1.digital-webstream.de:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1887,7 +1887,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "156",
-            audio: "http://mp3stream1.apasf.apa.at:8000",
+            audio: "http://mp3stream1.apasf.apa.at:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1913,7 +1913,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://mp3stream7.apasf.apa.at:8000/",
+            audio: "http://mp3stream7.apasf.apa.at:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1939,7 +1939,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "192",
-            audio: "http://mp3stream3.apasf.apa.at:8000/",
+            audio: "http://mp3stream3.apasf.apa.at:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1965,7 +1965,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "192",
-            audio: "http://194.232.200.146:8000/",
+            audio: "http://194.232.200.146:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1991,7 +1991,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "156",
-            audio: "http://194.232.200.145:8000/",
+            audio: "http://194.232.200.145:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -2017,7 +2017,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "156",
-            audio: "http://mp3stream8.apasf.apa.at:8000/",
+            audio: "http://mp3stream8.apasf.apa.at:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -2043,7 +2043,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "156",
-            audio: "http://194.232.200.148:8000/",
+            audio: "http://194.232.200.148:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -2069,7 +2069,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "156",
-            audio: "http://194.232.200.147:8000/",
+            audio: "http://194.232.200.147:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -2095,7 +2095,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "192",
-            audio: "http://mp3stream9.apasf.apa.at:8000/",
+            audio: "http://mp3stream9.apasf.apa.at:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -2121,7 +2121,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://194.232.200.149:8000/",
+            audio: "http://194.232.200.149:8000/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -2292,7 +2292,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "RauteMusik #MUSIK.BIGCITYBEATS",
+            name: "RauteMusik #BIGCITYBEATS",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -2318,7 +2318,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "RauteMusik #Musik.DeutschRap",
+            name: "RauteMusik #DeutschRap",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -2344,7 +2344,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "RauteMusik #MUSIK.DRUMSTEP",
+            name: "RauteMusik #DRUMSTEP",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -2370,7 +2370,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "RauteMusik #MUSIK.HARDER",
+            name: "RauteMusik #HARDER",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -2396,7 +2396,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "RauteMusik #MUSIK.HOUSE",
+            name: "RauteMusik #HOUSE",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -2422,7 +2422,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "RauteMusik #MUSIK.ORIENTAL",
+            name: "RauteMusik #ORIENTAL",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -2448,7 +2448,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "RauteMusik #MUSIK.TECHHOUSE",
+            name: "RauteMusik #TECHHOUSE",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -2474,7 +2474,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "RauteMusik #MUSIK.TRANCE",
+            name: "RauteMusik #TRANCE",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -2615,7 +2615,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://play.russian-radio.de:8000",
+            audio: "http://play.russian-radio.de:8000;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -2880,7 +2880,7 @@ function chillHop() {
             ],
             artist: "128",
             audio:
-                "http://stream.sunshine-live.de/2000er/mp3-192/stream.sunshine-live.de/play.m3u",
+                "http://stream.sunshine-live.de/2000er/mp3-192/stream.sunshine-live.de/",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -2907,7 +2907,7 @@ function chillHop() {
             ],
             artist: "128",
             audio:
-                "http://stream.sunshine-live.de/live/mp3-192/stream.sunshine-live.de/play.m3u",
+                "http://stream.sunshine-live.de/live/mp3-192/stream.sunshine-live.de/",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -3193,7 +3193,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://stream.uzic.ch:9010",
+            audio: "http://stream.uzic.ch:9010/;",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
