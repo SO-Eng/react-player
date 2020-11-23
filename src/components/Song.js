@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import graphicData from "../graphic";
 
 const Song = ({
     currentSong,
@@ -8,12 +9,13 @@ const Song = ({
     isPlaying,
 }) => {
     const [cover, setCover] = React.useState("");
+    const graphicImages = graphicData();
 
     useEffect(() => {
         if (currentSong.internetRadio && songChanged) {
             const num = Math.floor(Math.random() * 7) + 1;
             setRndNum(num - 1);
-            setCover(currentSong.cover[num - 1]);
+            setCover(graphicImages[0].cover[num - 1]);
             setSongChanged(false);
         }
         if (!currentSong.internetRadio && songChanged) {

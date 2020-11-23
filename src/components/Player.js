@@ -6,6 +6,7 @@ import {
     faAngleRight,
     faPause,
 } from "@fortawesome/free-solid-svg-icons";
+import graphicData from "../graphic";
 
 const Player = ({
     currentSong,
@@ -22,6 +23,8 @@ const Player = ({
     setSongChanged,
     rndNum,
 }) => {
+    const graphicColor = graphicData();
+
     const activeLibraryHandler = (nextPrev) => {
         const newSong = songs.map((song) => {
             if (song.id === nextPrev.id) {
@@ -95,7 +98,7 @@ const Player = ({
             }
         }
         if (isPlaying) {
-            audioRef.current.play();
+            audioRef.current?.play();
         }
     };
 
@@ -120,11 +123,11 @@ const Player = ({
                     style={{
                         background: `linear-gradient(to right, ${
                             currentSong.internetRadio
-                                ? currentSong.color[rndNum][0]
+                                ? graphicColor[1].color[rndNum][0]
                                 : currentSong.color[0]
                         }, ${
                             currentSong.internetRadio
-                                ? currentSong.color[rndNum][1]
+                                ? graphicColor[1].color[rndNum][1]
                                 : currentSong.color[1]
                         })`,
                         pointerEvents: currentSong.internetRadio && "none",
