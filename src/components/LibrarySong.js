@@ -1,5 +1,7 @@
 import React from "react";
 import Vinyl from "../images/vinyl-blue.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const LibrarySong = ({
     song,
@@ -35,6 +37,8 @@ const LibrarySong = ({
         setSongChanged(true);
     };
 
+    const favoriteHandler = () => {};
+
     return (
         <div
             onClick={songSelectHandler}
@@ -44,9 +48,21 @@ const LibrarySong = ({
                 src={song.internetRadio ? Vinyl : song.cover}
                 alt={song.name}
             />
-            <div className="songDescription">
-                <h3>{song.name}</h3>
-                <h4>{song.artist}</h4>
+            <div className="textContainer">
+                <div className="textStarDivider">
+                    <div className="songDescription">
+                        <h3>{song.name}</h3>
+                        <h4>{song.artist}</h4>
+                    </div>
+                    <div>
+                        <FontAwesomeIcon
+                            onClick={favoriteHandler}
+                            className="favoriteStar"
+                            icon={faStar}
+                            size="1x"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );

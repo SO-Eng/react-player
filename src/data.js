@@ -211,7 +211,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://mp3.webradio.antenne.de:80",
+            audio: "http://channels.webradio.antenne.de/antenne",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1153,7 +1153,7 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://streams.ffh.de/radioffh/aac/livestream.m3u",
+            audio: "http://mp3.ffh.de/radioffh/hqlivestream.mp3",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1257,7 +1257,8 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://metafiles.gl-systemhaus.de/hr/hr1_2.m3u",
+            audio:
+                "http://hr-hr1-live.cast.addradio.de/hr/hr1/live/mp3/128/stream.mp3",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1283,7 +1284,8 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://metafiles.gl-systemhaus.de/hr/hr2_2.m3u",
+            audio:
+                "http://hr-hr2-live.cast.addradio.de/hr/hr2/live/mp3/128/stream.mp3",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1309,7 +1311,8 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://metafiles.gl-systemhaus.de/hr/hr3_2.m3u",
+            audio:
+                "http://hr-hr3-live.cast.addradio.de/hr/hr3/live/mp3/128/stream.mp3",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1335,7 +1338,8 @@ function chillHop() {
                 "https://softwort-developement.com/files/images/music/music07.png",
             ],
             artist: "128",
-            audio: "http://metafiles.gl-systemhaus.de/hr/hr4_2.m3u",
+            audio:
+                "http://hr-hr4-live.cast.addradio.de/hr/hr4/live/mp3/128/stream.mp3",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
@@ -1402,7 +1406,7 @@ function chillHop() {
             internetRadio: true,
         },
         {
-            name: "laut.fm/herrmerktradio",
+            name: "laut.fm/herrmerkt-radio",
             cover: [
                 "https://softwort-developement.com/files/images/music/music01.png",
                 "https://softwort-developement.com/files/images/music/music02.png",
@@ -3350,6 +3354,33 @@ function chillHop() {
             ],
             artist: "128",
             audio: "http://stream.wunschradio.de/wunschradio/livestream.mp3",
+            color: [
+                ["#603431", "#ffa79f"],
+                ["#7c473f", "#fbd8c4"],
+                ["#1a064e", "#f22e70"],
+                ["#0179ff", "#feb982"],
+                ["#4d0506", "#ef6e13"],
+                ["#4e78c0", "#edbbbe"],
+                ["#230247", "#ead7ff"],
+            ],
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "YouFM",
+            cover: [
+                "https://softwort-developement.com/files/images/music/music01.png",
+                "https://softwort-developement.com/files/images/music/music02.png",
+                "https://softwort-developement.com/files/images/music/music03.png",
+                "https://softwort-developement.com/files/images/music/music04.png",
+                "https://softwort-developement.com/files/images/music/music05.png",
+                "https://softwort-developement.com/files/images/music/music06.png",
+                "https://softwort-developement.com/files/images/music/music07.png",
+            ],
+            artist: "128",
+            audio:
+                "http://hr-youfm-live.cast.addradio.de/hr/youfm/live/mp3/128/stream.mp3",
             color: [
                 ["#603431", "#ffa79f"],
                 ["#7c473f", "#fbd8c4"],
