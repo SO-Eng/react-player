@@ -10,9 +10,15 @@
     transform: translateX(-100%);
     transition: all 0.5s ease;
     opacity: 0;
+    z-index: 2;
     h2 {
         padding: 2rem 0 0 2rem;
     }
+}
+
+.activeLibrary {
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 .libraryHeader {
@@ -27,6 +33,20 @@
     h3 {
         padding: 1rem 0 0 2rem;
     }
+}
+
+.librarySongsFav {
+    max-height: 432px;
+    opacity: 1;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+}
+
+.librarySongsFavCollapsed {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
 
 .collection {
@@ -64,6 +84,10 @@
     color: rgb(155, 155, 155);
 }
 
+.favoriteStarSelected {
+    color: rgb(255, 238, 0);
+}
+
 .songDescription {
     padding: 0.75rem;
     h3 {
@@ -76,11 +100,6 @@
 
 .selected {
     background: rgb(132, 203, 236);
-}
-
-.activeLibrary {
-    transform: translateX(0%);
-    opacity: 1;
 }
 
 * {
@@ -99,7 +118,7 @@
     border: transparent;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (orientation: portrait) and (max-width: 767px) {
     .library {
         width: 100%;
     }

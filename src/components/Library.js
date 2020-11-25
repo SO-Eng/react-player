@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SearchForm from "./SearchForm";
 import LibrarySong from "./LibrarySong";
 
@@ -10,8 +10,19 @@ const Library = ({
     setSongs,
     libraryStatus,
     setSongChanged,
+    favoritesChanged,
+    setFavoritesChanged,
 }) => {
     const [search, setSearch] = useState("");
+    const [favorites, setFavorites] = useState([]);
+
+    useEffect(() => {
+        if (favoritesChanged) {
+            const tempStorage = JSON.parse(localStorage.getItem("favorites"));
+            setFavorites(tempStorage);
+            setFavoritesChanged(false);
+        }
+    }, [favoritesChanged]);
 
     return (
         <div className={`library ${libraryStatus && "activeLibrary"}`}>
@@ -21,6 +32,31 @@ const Library = ({
             </div>
             <div className="favorites">
                 <h3>Favorites</h3>
+            </div>
+            <div
+                className={`librarySongsFav ${
+                    search.length > 0 && "librarySongsFavCollapsed"
+                }`}
+            >
+                {songs.map((song) =>
+                    favorites?.map(
+                        (favo) =>
+                            song.name === favo && (
+                                <LibrarySong
+                                    setCurrentSong={setCurrentSong}
+                                    song={song}
+                                    audioRef={audioRef}
+                                    isPlaying={isPlaying}
+                                    songs={songs}
+                                    setSongs={setSongs}
+                                    key={song.id}
+                                    id={song.id}
+                                    setSongChanged={setSongChanged}
+                                    setFavoritesChanged={setFavoritesChanged}
+                                />
+                            )
+                    )
+                )}
             </div>
             <div className="collection">
                 <h3>Collection</h3>
@@ -38,6 +74,7 @@ const Library = ({
                             key={song.id}
                             id={song.id}
                             setSongChanged={setSongChanged}
+                            setFavoritesChanged={setFavoritesChanged}
                         />
                     ) : null
                 )}

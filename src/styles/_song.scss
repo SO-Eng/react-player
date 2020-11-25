@@ -21,7 +21,7 @@
     height: 8px;
     width: 8px;
     background: #fff;
-    z-index: 2;
+    z-index: 1;
     margin-bottom: 114px;
     border-radius: 50%;
 }
@@ -34,6 +34,22 @@
 //     margin-bottom: 114px;
 //     border-radius: 50%;
 // }
+
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+    .songContainer {
+        img {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    .songContainer {
+        img {
+            width: 30%;
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
     .songContainer {

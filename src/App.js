@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 // Import Styles
 import "./styles/app.scss";
 // Adding Components
@@ -15,7 +15,7 @@ function App() {
     // State
     const [songs, setSongs] = useState(data());
     const [currentSong, setCurrentSong] = useState(songs[0]);
-    const [songChanged, setSongChanged] = useState(false);
+    const [songChanged, setSongChanged] = useState(true);
     const [rndNum, setRndNum] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
     const [songInfo, setSongInfo] = useState({
@@ -24,7 +24,8 @@ function App() {
         animationPercentage: 0,
     });
     const [libraryStatus, setLibraryStatus] = useState(false);
-    const [musicVolume, setMusicVolume] = useState(0.4);
+    const [musicVolume, setMusicVolume] = useState(0.1);
+    const [favoritesChanged, setFavoritesChanged] = useState(true);
 
     const timeUpdateHandler = (e) => {
         const current = e.target.currentTime;
@@ -39,8 +40,12 @@ function App() {
             currentTime: current,
             duration,
             animationPercentage: animation,
-        }); // Same name (duration) doesn't need duration: duration
+        });
     };
+
+    useEffect(() => {
+        audioRef.current.volume = musicVolume;
+    }, [musicVolume]);
 
     const activeLibraryHandler = (nextPrev) => {
         const newSong = songs.map((song) => {
@@ -106,6 +111,8 @@ function App() {
                 isPlaying={isPlaying}
                 libraryStatus={libraryStatus}
                 setSongChanged={setSongChanged}
+                favoritesChanged={favoritesChanged}
+                setFavoritesChanged={setFavoritesChanged}
             />
             <audio
                 preload="auto"

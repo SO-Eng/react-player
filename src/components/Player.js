@@ -77,7 +77,7 @@ const Player = ({
 
     const volumeHandler = (e) => {
         const position = e.target.value;
-        audioRef.current.volume = position;
+        //audioRef.current.volume = position;
         setMusicVolume(position);
     };
 
