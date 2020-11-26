@@ -26,7 +26,6 @@ const Song = ({
 
     return (
         <div className="songContainer">
-            <div className="vinylHole"></div>
             {/* <div className="vinylCover"></div> */}
             <img
                 className={isPlaying ? "song-playing" : ""}

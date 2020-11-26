@@ -51,12 +51,16 @@ input[type="range"]:focus {
 }
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
+    background: transparent;
+    border: none;
     height: 16px;
     width: 16px;
 }
 
 input[type="range"]::-moz-range-thumb {
     -webkit-appearance: none;
+    background: transparent;
+    border: none;
     height: 16px;
     width: 16px;
 }

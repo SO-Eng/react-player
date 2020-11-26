@@ -1,5 +1,5 @@
 .songContainer {
-    min-height: 60vh;
+    min-height: 54vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,24 +16,9 @@
     }
 }
 
-.vinylHole {
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    background: #fff;
-    z-index: 1;
-    margin-bottom: 114px;
-    border-radius: 50%;
+.song-playing {
+    animation: rotation 30s infinite linear;
 }
-// .vinylCover {
-//     position: absolute;
-//     height: 80px;
-//     width: 80px;
-//     background: rgb(80, 85, 88);
-//     z-index: 1;
-//     margin-bottom: 114px;
-//     border-radius: 50%;
-// }
 
 @media screen and (orientation: portrait) and (max-width: 1024px) {
     .songContainer {
@@ -59,9 +44,6 @@
     }
 }
 
-.song-playing {
-    animation: rotation 30s infinite linear;
-}
 //set these keyframes anywhere outside selectors so you can import its property
 
 @keyframes rotation {
