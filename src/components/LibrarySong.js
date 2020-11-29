@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Vinyl from "../images/vinyl-blue.svg";
+import Vinyl from "../images/vinyl-blue.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
