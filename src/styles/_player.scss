@@ -95,11 +95,16 @@ input[type="range"]::-moz-range-thumb {
 }
 
 // NEW SLIDER HERE
-
 .heat-slider {
     position: relative;
     font-size: 1em;
     line-height: 0;
+}
+
+@media (pointer: coarse) {
+    .heat-slider {
+        display: none;
+    }
 }
 
 .heat-slider:before,

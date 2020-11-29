@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import SearchForm from "./SearchForm";
 import LibrarySong from "./LibrarySong";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Library = ({
     songs,
@@ -12,9 +14,15 @@ const Library = ({
     setSongChanged,
     favoritesChanged,
     setFavoritesChanged,
+    setIsPlaying,
 }) => {
     const [search, setSearch] = useState("");
     const [favorites, setFavorites] = useState([]);
+    const [favoritesOpen, setFavoritesOpen] = useState(true);
+
+    const handleFavoritesList = () => {
+        setFavoritesOpen(!favoritesOpen);
+    };
 
     useEffect(() => {
         if (favoritesChanged) {
@@ -22,7 +30,7 @@ const Library = ({
             setFavorites(tempStorage);
             setFavoritesChanged(false);
         }
-    }, [favoritesChanged]);
+    }, [favoritesChanged, setFavoritesChanged]);
 
     return (
         <div className={`library ${libraryStatus && "activeLibrary"}`}>
@@ -31,32 +39,45 @@ const Library = ({
                 <SearchForm setSearch={setSearch} />
             </div>
             <div className="favorites">
-                <h3>Favorites</h3>
-            </div>
-            <div
-                className={`librarySongsFav ${
-                    search.length > 0 && "librarySongsFavCollapsed"
-                }`}
-            >
-                {songs.map((song) =>
-                    favorites?.map(
-                        (favo) =>
-                            song.name === favo && (
-                                <LibrarySong
-                                    setCurrentSong={setCurrentSong}
-                                    song={song}
-                                    audioRef={audioRef}
-                                    isPlaying={isPlaying}
-                                    songs={songs}
-                                    setSongs={setSongs}
-                                    key={song.id}
-                                    id={song.id}
-                                    setSongChanged={setSongChanged}
-                                    setFavoritesChanged={setFavoritesChanged}
-                                />
-                            )
-                    )
-                )}
+                <div className="favoritesHeader" onClick={handleFavoritesList}>
+                    <h3>Favorites</h3>
+                    <FontAwesomeIcon
+                        className="favoritesCollapse"
+                        icon={favoritesOpen ? faChevronDown : faChevronUp}
+                        size="1x"
+                    />
+                </div>
+                <div
+                    className={`librarySongsFav ${
+                        search.length > 0
+                            ? "librarySongsFavCollapsed"
+                            : !favoritesOpen && "librarySongsFavCollapsed"
+                    }`}
+                >
+                    {songs.map((song) =>
+                        favorites?.map(
+                            (favo) =>
+                                song.name === favo && (
+                                    <LibrarySong
+                                        setCurrentSong={setCurrentSong}
+                                        song={song}
+                                        audioRef={audioRef}
+                                        isPlaying={isPlaying}
+                                        songs={songs}
+                                        setSongs={setSongs}
+                                        key={song.id}
+                                        id={song.id}
+                                        setSongChanged={setSongChanged}
+                                        setFavoritesChanged={
+                                            setFavoritesChanged
+                                        }
+                                        setIsPlaying={setIsPlaying}
+                                    />
+                                )
+                        )
+                    )}
+                </div>
+                <div className="favoritesFooter"></div>
             </div>
             <div className="collection">
                 <h3>Collection</h3>
@@ -75,6 +96,7 @@ const Library = ({
                             id={song.id}
                             setSongChanged={setSongChanged}
                             setFavoritesChanged={setFavoritesChanged}
+                            setIsPlaying={setIsPlaying}
                         />
                     ) : null
                 )}

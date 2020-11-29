@@ -5,6 +5,9 @@ const SearchForm = ({ setSearch }) => {
 
     const updateSearch = (e) => {
         setQuery(e.target.value);
+        if (e.target.value === "") {
+            setSearch("");
+        }
     };
 
     const getSearch = (e) => {

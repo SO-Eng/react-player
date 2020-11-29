@@ -7,23 +7,25 @@ const LibrarySong = ({
     song,
     setCurrentSong,
     audioRef,
-    isPlaying,
     songs,
     setSongs,
     id,
     setSongChanged,
     setFavoritesChanged,
+    setIsPlaying,
 }) => {
     const favoriteName = localStorage.getItem("favorites");
-    // const [currentStorage, setCurrentStorage] = useState([]);
-    // const [tempStorage, setTempStorage] = useState([]);
+    const [favoriteArray, setFavoriteArray] = useState([]);
 
-    // useEffect(() => {
-    //     const getStorage = localStorage.getItem("favorites");
-    //     if (getStorage?.length > 0) {
-    //         setCurrentStorage(localStorage.getItem("favorites"));
-    //     }
-    // }, [currentStorage]);
+    useEffect(() => {
+        if (favoriteName?.length > 0 || favoriteName !== null) {
+            let tempArray = favoriteName
+                .replace("[", "")
+                .replace("]", "")
+                .split(",");
+            setFavoriteArray(tempArray);
+        }
+    }, [favoriteName]);
 
     const songSelectHandler = async () => {
         await setCurrentSong(song);
@@ -42,10 +44,9 @@ const LibrarySong = ({
             }
         });
         setSongs(newSong);
-        // check if the song is playing
-        if (isPlaying) {
-            audioRef.current.play();
-        }
+        // Play when selected from library
+        audioRef.current.play();
+        setIsPlaying(true);
         setSongChanged(true);
     };
 
@@ -67,6 +68,8 @@ const LibrarySong = ({
         setFavoritesChanged(true);
     };
 
+    //console.log(favoriteArray);
+
     return (
         <div
             onClick={songSelectHandler}
@@ -85,9 +88,13 @@ const LibrarySong = ({
                     <div>
                         <FontAwesomeIcon
                             onClick={() => favoriteHandler(song.name)}
-                            // onClick={() => test()}
+                            // className={favoriteArray?.map((favo) =>
+                            //     favo === song.name
+                            //         ? "favoriteStarSelected"
+                            //         : "favoriteStar"
+                            // )}
                             className={
-                                favoriteName?.includes(song.name)
+                                favoriteArray.includes(`"${song.name}"`)
                                     ? "favoriteStarSelected"
                                     : "favoriteStar"
                             }

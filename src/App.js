@@ -113,6 +113,7 @@ function App() {
                 setSongChanged={setSongChanged}
                 favoritesChanged={favoritesChanged}
                 setFavoritesChanged={setFavoritesChanged}
+                setIsPlaying={setIsPlaying}
             />
             <audio
                 preload="auto"
