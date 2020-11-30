@@ -519,6 +519,118 @@ function musicData() {
             internetRadio: true,
         },
         {
+            name: "Sunshine Live House",
+            artist: "192",
+            audio: "http://sunshinelive.hoerradar.de/sunshinelive-house-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live EDM",
+            artist: "192",
+            audio: "http://sunshinelive.hoerradar.de/sunshinelive-edm-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Trance",
+            artist: "192",
+            audio:
+                "http://sunshinelive.hoerradar.de/sunshinelive-trance-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Hard",
+            artist: "192",
+            audio: "http://sunshinelive.hoerradar.de/sunshinelive-hard-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Techno",
+            artist: "192",
+            audio:
+                "http://sunshinelive.hoerradar.de/sunshinelive-techno-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Lounge",
+            artist: "192",
+            audio:
+                "http://sunshinelive.hoerradar.de/sunshinelive-lounge-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live 90er",
+            artist: "192",
+            audio: "http://sunshinelive.hoerradar.de/sunshinelive-90er-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Festival",
+            artist: "192",
+            audio:
+                "http://sunshinelive.hoerradar.de/sunshinelive-festival-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Drum 'n Base",
+            artist: "192",
+            audio: "http://sunshinelive.hoerradar.de/sunshinelive-dnb-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Handsup",
+            artist: "192",
+            audio:
+                "http://sunshinelive.hoerradar.de/sunshinelive-handsup-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Mayday",
+            artist: "192",
+            audio:
+                "http://sunshinelive.hoerradar.de/sunshinelive-mayday-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Nature One",
+            artist: "192",
+            audio:
+                "http://sunshinelive.hoerradar.de/sunshinelive-natureone-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
+            name: "Sunshine Live Timewarp",
+            artist: "192",
+            audio:
+                "http://sunshinelive.hoerradar.de/sunshinelive-timewarp-mp3-hq",
+            id: uuidv4(),
+            active: false,
+            internetRadio: true,
+        },
+        {
             name: "TechLiveRadio",
             artist: "128",
             audio: "https://stream.laut.fm/techliveradio",
