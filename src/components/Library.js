@@ -43,7 +43,7 @@ const Library = ({
                     <h3>Favorites</h3>
                     <FontAwesomeIcon
                         className="favoritesCollapse"
-                        icon={favoritesOpen ? faChevronDown : faChevronUp}
+                        icon={favoritesOpen ? faChevronUp : faChevronDown}
                         size="1x"
                     />
                 </div>
