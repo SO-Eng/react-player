@@ -1,16 +1,75 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "https://localhost:3000/",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true
+    },
+    {
+      "name": "Attach to Chrome",
+      "type": "chrome",
+      "request": "attach",
+      "url": "https://localhost:3000/",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true
+    },
+    {
+        "name": "Launch Brave @Windows",
+        "type": "chrome",
+        "request": "launch",
+        "runtimeExecutable": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+        "url": "https://localhost:3000",
+        "webRoot": "${workspaceFolder}",
+        "sourceMaps": true,
+        "trace": true
+    },
+    {
+      "name": "SSL Brave @Mac",
+      "type": "chrome",
+      "request": "launch",
+      "runtimeExecutable": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "url": "https://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true
+    },
+    {
+      "name": "Launch Brave @Mac",
+      "type": "chrome",
+      "request": "launch",
+      "runtimeExecutable": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true
+    },
+    {
+      "type": "pwa-msedge",
+      "request": "launch",
+      "name": "Launch Edge",
+      "url": "https://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true
+    },
+    {
+      "name": "Launch Firefox",
+      "type": "firefox",
+      "request": "launch",
+      "url": "https://localhost:3000/",
+      "reAttach": true,
+      "pathMappings": [
         {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}/src",
-            "breakOnLoad": true
+          "url": "webpack:///",
+          "path": "${workspaceFolder}/"
         }
-    ]
+      ]
+    }
+  ]
 }
